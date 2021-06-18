@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result {
+    margin: 1rem;
+    padding: 1rem;
+    background:whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    min-width: 250px;
+    position: relative;
+    text-align: center;
+}
+.result:hover {
+    background: lightgray;
+}
+.result i.fa {
+    color: darkred;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+h4:hover  {
+    color: gray;
+}
+
+p {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+input {
+    text-align: right;
+    margin: 1rem;
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+.loading {
+    border: 1px solid lightgrey;
+    border-left: 1px solid gray;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.menu {
+    margin: 2em 1em;
+}
+
+.menu__link {
+    color: lightskyblue;
+    text-decoration: none;
+    padding-right: 2em;
+}
+
+.active {
+    color: darkblue;
+}
